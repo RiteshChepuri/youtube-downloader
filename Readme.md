@@ -2,7 +2,7 @@
 
 pytube library is Required.
 
-'pip install pytube'
+`pip install pytube`
 
 ### Future improvements
 
