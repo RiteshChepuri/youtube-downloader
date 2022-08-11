@@ -22,7 +22,5 @@ if function == "2":
     base,ext = os.path.splitext(out_file)
     new_file = base + '.mp3'
     os.rename(out_file, new_file)
-
-    # ad[0].download('D:\\Personal\\Audios_and_Videos\\Audio')
     print(yt2.title + " Audio downloaded succesfully!!!")
 
