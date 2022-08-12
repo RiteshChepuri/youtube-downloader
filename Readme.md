@@ -6,8 +6,8 @@ pytube library is required.
 
 `pip install pytube`
 
-os library comes included with the python. 
+os library comes included with the python installation. 
 
-### Future improvements
+## Future improvements 
 
 Download entire youtube playlist 
