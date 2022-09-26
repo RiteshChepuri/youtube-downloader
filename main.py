@@ -1,7 +1,5 @@
-from turtle import title
 from pytube import YouTube
 from pytube import Playlist
-import moviepy.editor as mp
 import os 
 
 main_input = input("What do you want to do?\n 1 for Single Video \n 2 for Entire Playlist\n")
@@ -46,6 +44,3 @@ if main_input == '1' :
         new_file = base + '.mp3'
         os.rename(out_file, new_file)
         print(yt2.title + " Audio downloaded succesfully!!!")
-
-
-
