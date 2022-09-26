@@ -1,5 +1,7 @@
+from turtle import title
 from pytube import YouTube
 from pytube import Playlist
+import moviepy.editor as mp
 import os 
 
 main_input = input("What do you want to do?\n 1 for Single Video \n 2 for Entire Playlist\n")
@@ -7,22 +9,13 @@ main_input = input("What do you want to do?\n 1 for Single Video \n 2 for Entire
 def playlist_down():
     playlist_link = input("Enter the link of the Playlist\n")
     playlist = Playlist(playlist_link)
-    downloaddirectory = 'D:\\Personal\\Audios_and_Videos\\Playlist'
-
-    print("Total videos to download:" , len(playlist.video_urls))
-    print("\n\n Links of the youtube videos\n")
-
-    for url in playlist.video_urls:
-        print(url)
 
     for video in playlist.videos:
-        print('Downloading: {} with url: {}'.format(video.title, video.watch_url))
+        print('Downloading:', video.title)
         video.streams.\
             filter(type='video', progressive=True, file_extension='mp4').\
-            order_by('resolution').\
-            desc().\
             first().\
-            download(downloaddirectory)
+            download('D:\\Personal\\Audios_and_Videos\\Video')
     print("Playlist download complete")
 
 
