@@ -12,4 +12,4 @@ Download entire youtube playlist now by creating a playlist and copying the link
 
 ## Future Improvements:
 
-Download playlist in mp3 format.
+Download playlist in mp3 format
